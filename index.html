@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="App">
+        <div class="show">
+            <h2></h2>
+        </div>
+        <ul class="table-buttons">
+            <li class="table-1">
+                <p onclick="">AC</p>
+                <p onclick="calc('%')">%</p>
+                <p onclick="calc('/')">/</p>
+                <p onclick="deleteValue()" class="yellow">C</p>
+            </li>
+            <li class="table-2">
+                <p onclick="calc('7')">7</p>
+                <p onclick="calc('8')">8</p>
+                <p onclick="calc('9')">9</p>
+                <p onclick="calc('*')" class="yellow">*</p>
+            </li>
+            <li class="table-3">
+                <p onclick="calc('4')">4</p>
+                <p onclick="calc('5')">5</p>
+                <p onclick="calc('6')">6</p>
+                <p onclick="calc('-')" class="yellow">-</p>
+            </li>
+            <li class="table-4">
+                <p onclick="calc('1')">1</p>
+                <p onclick="calc('2')">2</p>
+                <p onclick="calc('3')">3</p>
+                <p onclick="calc('+')" class="yellow">+</p>
+            </li>
+            <li class="table-5">
+                <p onclick="calc('0')" class="zero">0</p>
+                <p onclick="calc(',')">,</p>
+                <p onclick="showResult()" class="yellow">=</p>
+            </li>
+        </ul>
+        <p class="footer">Developed by:<a href="https://github.com/nioritos" target="_blank">nior</a></p>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
